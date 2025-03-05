@@ -10,7 +10,7 @@ tiermakerurl = input("Url to the tiermaker live? (https://live.tiermaker.com/abc
 itera = input("How often to vote: ")
 imgsrc = input("Who to vote for? (image src url): ")
 whattovote = input("RGB of the option to vote for (seperated with comma, e.g. '255, 127, 128'): ")
-for i in range(itera):
+for i in range(int(itera)):
     # Set up the Edge driver in no gpu mode
     service = Service(EdgeChromiumDriverManager().install())
     options = webdriver.EdgeOptions()
